@@ -33,3 +33,8 @@ Datatable 的 editor 提供了三种更新方式：
 `formOptions.inline` - Inline editor
 
 在设置更新方式的时候，要确定修改的是哪一种
+
+
+
+## Python中想要groupby 年月 或者想把日期转换为当月
+data = data.assign(date=data['date'].dt.strftime('%Y-%m-1'))
